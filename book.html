@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link rel="stylesheet" href="css/book.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/e75f0ba72f.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="Image/0352cae58126eaac373b1febac5ffe52.jpg">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Archivo' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8"></div>
+                    <div class="col-4">
+                        <div class="top-right">
+                            <span class="icon">
+                                <i class="fas fa-search"><input type="text"
+                                        style="display: inline-block; width: 75%;"></i>
+                            </span>
+                            <a type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#Register"><i class="fas fa-pen"></i>Register</a>
+                            <span>/</span>
+                            <a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Login"><i
+                                    class="fas fa-user"></i>Login</a>
+
+                            <div class="modal fade" id="Register" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form action="Register.html">
+                                                <div class="mb-3">
+                                                    <label for="user-name" class="col-form-label">User name</label>
+                                                    <input type="text" class="form-control" id="user-name" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="password-text" class="col-form-label">Password</label>
+                                                    <input type="password" class="form-control" id="password-text"
+                                                        required></input>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="password-text" class="col-form-label">Confirm
+                                                        Password</label>
+                                                    <input type="password" class="form-control"
+                                                        id="password-text"></input>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="email-text" class="col-form-label">Email</label>
+                                                    <input type="email" class="form-control" id="email-text"
+                                                        required></input>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <input type="submit" class="btn btn-primary" value="Login">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="Login" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="user-name" class="col-form-label">User name</label>
+                                                    <input type="text" class="form-control" id="user-name">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="password-text" class="col-form-label">Password</label>
+                                                    <input type="password" class="form-control"
+                                                        id="password-text"></input>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="remember"></input>
+                                                    <label for="remember"
+                                                        style="text-transform: none; font-size: 15px;">Remember
+                                                        password</label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary">Login</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#top" aria-controls="top" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="Home.html">Book Store</a>
+              <div class="collapse navbar-collapse" id="top">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Shop.html">Shop</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="book">
+                        <div class="image">
+                            <img src="Image/book cover2.jpg" alt="cover" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="des">
+                        <h1>Everybody's Fool: A novel</h1>
+                        <div class="price">
+                            <span><strike>$59.99</strike>&nbsp;$23.99</span>
+                        </div>
+                        <hr>
+                        <div class="info">
+                            <p>Author: <span>Byron Kelly</span></p>
+                            <p>Categories: <span>Children's books, Textbooks</span></p>
+                        </div>
+                        <hr>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    <div class="shopping" role="form">
+                        <div class="quantity" style="display: inline-block;">
+                            <input type="number" name="quantity" id="quantity" min="1"  value="1">
+                        </div>
+                        <button type="submit" name="add-to-cart">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="related-product">
+                <div class="row">
+                    <div class="col">
+                        <h1>Related Products</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="book">
+                            <img src="Image/book cover3.jpg" class="img-fluid" alt="cover">
+                            <i class="fas fa-shopping-cart"><a href="Shop.html"></a></i>
+                        </div>
+                        <div class="caption">
+                            <h3>The naked cookbook</h3>
+                            By&nbsp;<span>YVONNE FLEMMING</span><br>
+                            <span>$20.95</span>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="book">
+                            <img src="Image/book cover3.jpg" alt="cover" class="img-fluid">
+                            <i class="fas fa-shopping-cart"><a href="Shop.html"></a></i>
+                        </div>
+                        <div class="caption">
+                            <h3>The naked cookbook</h3>
+                            By&nbsp;<span>YVONNE FLEMMING</span><br>
+                            <span>$20.95</span>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="book">
+                            <img src="Image/book cover3.jpg" class="img-fluid" alt="cover">
+                            <i class="fas fa-shopping-cart"><a href="Shop.html"></a></i>
+                        </div>
+                        <div class="caption">
+                            <h3>The naked cookbook</h3>
+                            By&nbsp;<span>YVONNE FLEMMING</span><br>
+                            <span>$20.95</span>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="book">
+                            <img src="Image/book cover3.jpg" class="img-fluid" alt="cover">
+                            <i class="fas fa-shopping-cart"><a href="Shop.html"></a></i>
+                        </div>
+                        <div class="caption">
+                            <h3>The naked cookbook</h3>
+                            By&nbsp;<span>YVONNE FLEMMING</span><br>
+                            <span>$20.95</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="logoLast">
+            <a href="#">
+                <img src="Image/0352cae58126eaac373b1febac5ffe52.jpg" alt="">
+                <p>Book store</p>
+            </a>
+        </div>
+        <nav>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-pinterest-square"></i></a>
+        </nav>
+    </footer>
+
+      <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="bootstrap-5.0.0-beta1-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
